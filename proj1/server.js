@@ -1,6 +1,7 @@
 
 // call express and other required for main app building.
 const express = require('express');
+const mongodb = require('./data/database')
 const app = express();
 
 // Define the port
@@ -11,5 +12,13 @@ const port = process.env.PORT || 3000;
 app.use('/', require('./routes'));
 
 
-// listen for traffic on the port.
-app.listen(port, () => {console.log(`running on port ${port}`)});
+
+// Listen and run
+mongodb.initDB((err) => {
+    if(err) {
+        console.log(err);
+    }
+    else {
+        app.listen(port, () => {console.log(`db listening and node running on port ${port}`)});
+    }
+});
