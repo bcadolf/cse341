@@ -1,0 +1,8 @@
+# node modules
+**/node_modules
+
+#environmental
+**/.env
+
+#OS files
+**/.DS_Store

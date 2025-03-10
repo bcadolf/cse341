@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend of CSE341 project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcadolf/cse341"
+  },
+  "license": "ISC",
+  "author": "Brandon A",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
