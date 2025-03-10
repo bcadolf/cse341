@@ -1,0 +1,16 @@
+{
+  "name": "proj1",
+  "version": "1.0.0",
+  "description": "Project 1 for CSE 341",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcadolf/cse341/proj1/"
+  },
+  "license": "ISC",
+  "author": "Brandon A",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
