@@ -31,7 +31,7 @@ const createContact = async (req, res) => {
     }
     const response = await mongodb.getDatabase().db('project1').collection('contacts').insertOne(contact);
     if (response.acknowledged) {
-        res.status(204).end();
+        res.status(201).json({ message: 'Contact created successfully', ObjectId: response.insertedId });
     } else {
         res.status(500).json(response.error || 'Some error occurred while updating the user.');
     }
