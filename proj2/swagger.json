@@ -5,10 +5,10 @@
     "description": "Product Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "proj2-7bps.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
