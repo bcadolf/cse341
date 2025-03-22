@@ -1,4 +1,4 @@
-// local host
+// local host testing use swagger for live testing
 ### GET all products
 GET http://localhost:3000/products
 
@@ -12,21 +12,29 @@ Content-Type: application/json
 {
     "name": "Test Product",
     "price": 9.99,
-    "form": "test",
+    "form": "sublingual strip",
     "description": "Just a test",
-    "stock": 1
+    "stock": 1,
+    "ingredients": ["mystery liquid", "perputual motion", "strawberry extract", "you're it"],
+    "warnings": ["sudden nap possible", "inablility to slow down", "uncontrolled giggles", "do not consume suger while under the effects of this drink"],
+    "size": "8oz",
+    "flavor": "strawberry.. we think"
 }
 
 ### PUT update a product - update id based on a valid one from db
-PUT http://localhost:3000/products/67ddb83c3a7b3582dfc3428f HTTP/1.1
+PUT http://localhost:3000/products/67ddaf397fb70b561b51336d HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Test Product Change",
-    "price": 9.99,
-    "form": "test",
-    "description": "Just a test that changed",
-    "stock": 1
+    "name": "Endless Tag",
+    "price": 3.5,
+    "form": "drink",
+    "description": "Distilled 3 1/2 year old energy allowing one to run as much as a toddler playing tag.",
+    "stock": 56,
+    "ingredients": ["mystery liquid", "perputual motion", "strawberry extract", "you're it"],
+    "warnings": ["sudden nap possible", "inablility to slow down", "uncontrolled giggles", "do not consume suger while under the effects of this drink"],
+    "size": "8oz",
+    "flavor": "strawberry.. we think"
 }
 
 ### delete a product - update id based on a valid one from db
@@ -52,7 +60,7 @@ Content-Type: application/json
 }
 
 ### PUT update a distributors - update id based on a valid one from db
-PUT http://localhost:3000/distributors/67de03b14b7573acf28f41b6 HTTP/1.1
+PUT http://localhost:3000/distributors/67de1c0adadd47c6622e4f13 HTTP/1.1
 Content-Type: application/json
 
 {

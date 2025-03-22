@@ -43,7 +43,8 @@ const addProduct = async (req, res) => {
             stock: Number(req.body.stock),
             ingredients: req.body.ingredients,
             warnings: req.body.warnings,
-            size: req.body.size
+            size: req.body.size,
+            flavor: req.body.flavor
         }
         const result = await mongodb
             .getDatabase()
@@ -67,7 +68,8 @@ const updateProduct = async (req, res) => {
             stock: Number(req.body.stock),
             ingredients: req.body.ingredients,
             warnings: req.body.warnings,
-            size: req.body.size
+            size: req.body.size,
+            flavor: req.body.flavor
         }
         const result = await mongodb
             .getDatabase()
