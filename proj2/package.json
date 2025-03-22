@@ -1,0 +1,26 @@
+{
+  "name": "proj2",
+  "version": "1.0.0",
+  "description": "Second Project for cse341",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcadolf/cse341/proj2/"
+  },
+  "license": "ISC",
+  "author": "Brandon A",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "swagger": "node swagger.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
