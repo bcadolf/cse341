@@ -7,6 +7,8 @@ const doc = {
     },
     host: 'proj2-7bps.onrender.com',
     schemes: ['https']
+    // host: 'localhost:3000',
+    // schemes: ['http']
 };
 
 const output = './swagger.json';
